@@ -30,7 +30,7 @@ function Home() {
             text={"Luis Augusto Kühn"}
         />
         <TypingTextEfect 
-            text={"Desenvolvedor"}
+            text={"Desenvolvedor - Tok&Stok"}
         />
     </>
   )
