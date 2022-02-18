@@ -29,9 +29,6 @@ function Home() {
         <TypingTextEfect 
             text={"Luis Augusto Kühn"}
         />
-        <TypingTextEfect 
-            text={"Desenvolvedor"}
-        />
     </>
   )
 }
