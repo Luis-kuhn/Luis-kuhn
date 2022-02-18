@@ -24,10 +24,13 @@ function Home() {
                 justifyContent: "center",
             }}>
             <Image src={profilePic} className="avatar" width={200} height={200} alt="Picture of the author" />
-      
+            
         </div>
         <TypingTextEfect 
             text={"Luis Augusto Kühn"}
+        />
+        <TypingTextEfect 
+            text={"Desenvolvedor"}
         />
     </>
   )
