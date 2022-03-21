@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Luis-kuhn/Luis-kuhn#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "devicon": "^2.14.0",
     "font-family-system-ui": "0.0.1",
     "next": "^11.1.2",
     "react": "^17.0.2",
