@@ -32,7 +32,6 @@ function StyleCss(params) {
                 box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
                 border-radius: 5px;
                 overflow: hidden;
-            
                 z-index: 1;
             }
             
@@ -51,22 +50,6 @@ function StyleCss(params) {
             }
             .avatar {
                 border-radius: 50%;
-            }
-            .social-holder {
-                margin-top: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-direction: row;
-                font-size: 40px;
-            }
-
-            .item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 50px;
-                width: 50px;
             }
 
             .card:hover{
@@ -123,10 +106,23 @@ function StyleCss(params) {
         </style>
     )
 }
+function getAge(month, day, year) {
+    const birthDate = new Date(year, month - 1, day)
+    const fromNow = new Date() - birthDate
+
+    const absoluteAge = new Date(fromNow).getFullYear()
+
+    // that's because timestamps starts from 1970, so
+    // we're getting relatively to that year
+    return Math.abs(absoluteAge - 1970)
+}
+
 
 function Home() {
     return (
         <>
+            <title>Luis Kühn</title>
+            
             <StyleCss />
             <div class="glass-modal-wrapper">
                 <div
@@ -141,7 +137,7 @@ function Home() {
                 />
                 <h3 style={{ textAlign: "center" }}>
                     Desenvolvedor De Software
-                </h3>    
+                </h3>
                 <div class="grid">
                     <div class="card">
                         <a href="https://github.com/Luis-kuhn">
