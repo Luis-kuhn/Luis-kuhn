@@ -139,7 +139,9 @@ function Home() {
                 <TypingTextEfect
                     text={"Luis Augusto Kühn"}
                 />
-
+                <h3 style={{ textAlign: "center" }}>
+                    Desenvolvedor De Software
+                </h3>    
                 <div class="grid">
                     <div class="card">
                         <a href="https://github.com/Luis-kuhn">
