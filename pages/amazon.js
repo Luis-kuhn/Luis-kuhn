@@ -163,10 +163,10 @@ function Home() {
                     </div>
 
                     <div class="card">
-                        <a href="../src/assets/curriculo/Curriculo_Luis_A_Kuhn_Amazon.pdf">
+                        <a href="https://drive.google.com/file/d/1aRaLVOs_8s3kQDFAqGJD2xGIhM1CWAEF/view?usp=sharing">
                             <h1 >
                                 <a >
-                                <Image src={amazonIcon} className="avatar" width={40} height={40} alt="Baixar curriculo para amazon" /> 
+                                <Image src={amazonIcon} className="avatar" width={33} height={33} alt="Baixar curriculo para amazon" /> 
                                     Currículo
                                 </a>
                             </h1>
