@@ -12,6 +12,7 @@ function StyleCss(params) {
                 padding: 0;
                 box-sizing: border-box;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+                font-size: 100%;
             }
             
             body {
@@ -22,7 +23,7 @@ function StyleCss(params) {
             }
             
             .glass-modal-wrapper {
-                padding: 50px;
+                padding: 2%;
                 position: relative;
                 margin: 15vh auto;
                 width: 30vw;
@@ -76,7 +77,7 @@ function StyleCss(params) {
             }
 
             .grid {
-                margin: 40px
+                margin: 5%
             }
 
             a {
@@ -102,6 +103,7 @@ function StyleCss(params) {
                     height: 100vh;
                 }
             }
+
         `}
         </style>
     )
@@ -130,7 +132,7 @@ function Home() {
                         display: "flex",
                         justifyContent: "center",
                     }}>
-                    <Image src={profilePic} className="avatar" width={200} height={200} alt="Picture of the author" />
+                    <Image src={profilePic} className="avatar"  width={200} height={200} alt="Picture of the author" />
                 </div>
                 <TypingTextEfect
                     text={"Luis Augusto Kühn"}
