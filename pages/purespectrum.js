@@ -3,7 +3,8 @@ import Image from 'next/image'
 import profilePic from '../src/assets/profile.jpg'
 import TypingTextEfect from '../src/components/Digitador/index'
 import devicon from 'devicon'
-
+import purespectrumIcon from '../src/assets/purespectrum.png'
+import brazilFlag from '../src/assets/brazilflag.png'
 function StyleCss(params) {
     return (
         <style jsx global>{`
@@ -16,11 +17,54 @@ function StyleCss(params) {
             }
             
             body {
-                // background: rgb(65,144,236);
-                // background: linear-gradient(180deg, rgba(65,144,236,1) 0%, rgba(242,154,193,1) 100%);
-                background-size: cover;
-                background-attachment: fixed;
+                background: 
+                radial-gradient(ellipse at center, rgba(30, 148, 202,0.1) 0%, rgba(255,255,255,0) 50%), /* niebieski */
+                radial-gradient(ellipse at center, rgba(35, 118, 43,0.1) 0%, rgba(255,255,255,0) 50%), /* niebieski */
+                radial-gradient(ellipse at center, rgba(244, 215, 79,0.1) 0%, rgba(255,255,255,0) 50%), /*czerwony */
+                radial-gradient(ellipse at center, rgba(222, 43, 50,0.1) 0%, rgba(255,255,255,0) 50%) /*zielony */
+                #e1e3e3;
+            background-repeat: 
+                no-repeat, 
+                no-repeat, 
+                no-repeat;
+            background-size: 
+                900px 900px,
+                900px 900px,
+                900px 900px;
+            background-attachment: fixed;
+            
+            animation:bganimation 30s infinite;
             }
+
+
+
+
+@keyframes bganimation
+{
+0%   {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+      50% {
+           background-position: 
+               150% 100%,
+               -200% 100%,
+               100% 0%,
+               0% 100%;
+      }
+      100% {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+}
+
+
             
             .glass-modal-wrapper {
                 padding: 2%;
@@ -29,8 +73,8 @@ function StyleCss(params) {
                 width: 30vw;
                 height: 70vh;
                 border: none;
-                background: inherit;
-                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+                // background: inherit;
+                // box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
                 border-radius: 5px;
                 overflow: hidden;
                 z-index: 1;
@@ -45,8 +89,8 @@ function StyleCss(params) {
                 right: 0;
                 bottom: 0;
             
-                box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-                filter: blur(10px);
+                // box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+                // filter: blur(10px);
                 z-index: -1;
             }
             .avatar {
@@ -124,21 +168,24 @@ function Home() {
     return (
         <>
             <title>Luis Kühn</title>
-            
+
             <StyleCss />
             <div class="glass-modal-wrapper">
                 <div
                     style={{
                         display: "flex",
                         justifyContent: "center",
+                        marginTop: "10px"
                     }}>
-                    <Image src={profilePic} className="avatar"  width={200} height={200} alt="Picture of the author" />
+                    <Image src={profilePic} className="avatar" width={150} height={150} alt="Picture of the author" />
+
+                    <Image src={purespectrumIcon} className="avatar" width={150} height={150} alt="Picture of the author" />
                 </div>
                 <TypingTextEfect
                     text={"Luis Augusto Kühn"}
                 />
                 <h3 style={{ textAlign: "center" }}>
-                    Desenvolvedor De Software
+                    Software Engineer
                 </h3>
                 <div class="grid">
                     <div class="card">
@@ -158,6 +205,17 @@ function Home() {
                                 <a >
                                     <i class="devicon-linkedin-plain"></i>
                                     Linkedin
+                                </a>
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://drive.google.com/file/d/1dP96FG_BLsVaUykbaluE5Ur-cv4_UWBN/view?usp=sharing">
+                            <h1 >
+                                <a >
+                                    <Image src={brazilFlag} width={20} height={16} alt="Baixar curriculo para purespectrum" />
+                                    Currículo
                                 </a>
                             </h1>
                         </a>

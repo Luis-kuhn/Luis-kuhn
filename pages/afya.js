@@ -132,6 +132,7 @@ function Home() {
                     style={{
                         display: "flex",
                         justifyContent: "center",
+                        marginTop: "10px"
                     }}>
                     <Image src={profilePic} className="avatar"  width={150} height={150} alt="Picture of the author" />
                     
