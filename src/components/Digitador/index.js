@@ -8,7 +8,9 @@ function TypingTextEfect({text}) {
     <Typing>
         <h1  style={{
                     display: "flex",
-                    justifyContent: "center",}}
+                    justifyContent: "center",
+                    fontSize: "40px"
+                  }}
         >
             {text}
         </h1>
