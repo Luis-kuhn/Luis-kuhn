@@ -167,7 +167,7 @@ function Home() {
                     </div>
 
                     <div class="card">
-                        <a href="https://drive.google.com/file/d/1ben6-rfX3tM2zfcNXhKp8ER_XvlWxF1e/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/1HQQls7z2snOywWoeEb0MYbFiG1bYr1rw/view?usp=sharing">
                             <h1 >
                                 <a >
                                 <Image src={afyaIcon} className="avatar" width={16} height={16} alt="Baixar curriculo para Afya" /> 
