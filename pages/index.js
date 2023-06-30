@@ -1,6 +1,6 @@
 // Tell webpack this JS file uses this image
 import Image from 'next/image'
-import profilePic from '../src/assets/profile2.png'
+import profilePic from '../src/assets/profile3.svg'
 import TypingTextEfect from '../src/components/Digitador/index'
 import devicon from 'devicon'
 
